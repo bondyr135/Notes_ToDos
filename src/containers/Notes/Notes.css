@@ -1,0 +1,11 @@
+
+.box_container {
+  top: 0px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.box_element {
+  margin: auto;
+  margin-top: 30px;
+}

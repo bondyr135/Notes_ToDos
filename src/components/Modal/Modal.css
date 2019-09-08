@@ -1,0 +1,87 @@
+  Dialog {
+    position: absolute;
+    width: 400px;
+    max-width: 400px;
+    min-width: 400px;
+    border-style: 2px solid #000;
+    box-shadow: 5px 5px #333;
+    padding: spacing(2, 4, 4);
+    outline: none;
+  }
+
+
+  .priority_avatar_modal {
+    flex-direction: row;
+    padding: 10px 24px;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .MuiTypography-h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .priority {
+    grid-area: title;
+    display: inline;
+    align-self: center;
+    justify-content: space-around;
+  }
+
+  .avatar_modal {
+    display: flex;
+    font-size: 30px;
+    align-self: center;
+    justify-content: space-around;
+    padding: auto;
+    color: #fff;
+  }
+
+  .edit {
+    text-decoration: none;
+  }
+
+  #alert-dialog-description {
+    border: 1px solid #888;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+
+  #alert-dialog-description-expired {
+    border: 5px solid rgb(224, 23, 23);
+    border-radius: 5px;
+    padding: 10px
+  }
+
+  .expired_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    color: rgb(224, 23, 23);
+    text-decoration: underline;
+  }
+
+  .expired_title_first {
+    color: rgb(224, 23, 23);
+    text-decoration: underline;
+  }
+
+  .expired_title_second {
+    color: rgb(224, 23, 23);
+
+  }
+
+
+
+
+/*
+To even the height of the title and the avatar
+to check what happens to the dialog window when a large content is inserted
+restrict the length of the title so itll fit in the width of the note    
+TRY: adding a bullet for every ENTER key press in the body of the note
+*/

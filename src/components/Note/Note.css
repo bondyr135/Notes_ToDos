@@ -1,0 +1,146 @@
+
+
+.note { 
+  display: inline-grid;
+  grid-template-areas:  
+                      "header header header header"
+                      "content content content content";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 40% 60%;
+  width: 240px;
+  border: 1px solid gray;
+  height: 150px;
+  align-self: flex-start;
+  color: #333;
+  padding: 0px;
+}
+
+
+/****************************
+HEADER
+*****************************/
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);                  
+  grid-template-areas: 
+                      "avatar actions actions actions";
+
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+}
+
+
+/****************************
+ACTIONS
+*****************************/
+
+.actions {
+  grid-area: actions;
+  display: grid;
+  grid-column: 2 / 5;
+  grid-row: 1 / 2;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100%;
+  grid-template-areas: 
+                      "more delete edit";
+  padding: none;
+  justify-items: center;
+  align-items: center;
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+}
+
+.avatar {
+  grid-area: avatar;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: center;
+  justify-content: center;
+  margin-left: 8px;
+  color: #eee;
+}
+
+.more {
+  grid-area: more;
+  grid-column: 1 / 2;
+  justify-content: center;
+  align-self: center;
+}
+
+.delete {
+  grid-area: delete;
+  grid-column: 2 / 3;
+  justify-content: center;
+  align-self: center;
+  padding: 12px;
+  margin: 0px;
+}
+
+.edit {
+  grid-area: edit;
+  grid-column: 3 / 4;
+  border-radius: 50%;
+  align-self: center;
+  justify-content: center;
+  margin: 0;
+  padding: 12px;
+}
+
+a {
+  margin: 0px;
+}
+
+
+/****************************
+CONTENT
+*****************************/
+
+.content {
+  grid-area: content; 
+  padding: 0px;
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 30% 70%;
+  grid-template-areas:
+                      "todo todo todo todo"
+                      "title title title title";
+  height: 100%;
+}
+
+
+.MuiCardContent-root:last-child {
+  padding-bottom: 0px;
+}
+
+
+.todo {
+  grid-column: 1/ 5;
+  display: inline-block;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: underline;
+}
+
+.title {
+  grid-area: title;
+  justify-self: center;
+  align-self: center;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.expired {
+  color: red;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+

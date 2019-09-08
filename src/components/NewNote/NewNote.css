@@ -1,0 +1,50 @@
+
+.body {
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 10px;
+}
+
+
+.paper {
+  width: 40%;
+  height: 82%;
+  margin: 3% auto 1%;
+  padding: 3%;
+  margin-top: 2vh;
+  padding-top: 3%;
+  padding-bottom: 4%;
+  border: 1px solid black;
+}
+
+.title, .date, .time, .body {
+  font-size: 17px;
+}
+
+.title {
+  width: 100%;
+  min-width: 100px;
+  top: 4px;
+}
+
+.date {
+  width: 50%;
+  float: left;
+}
+
+.time {
+  width: 35%;
+  float: right;
+}
+
+.submit_button {
+  float: right;
+}
+
+.submit_link {
+  text-decoration: none;
+  border: none;
+  padding: 2px;
+  color: black;
+}
